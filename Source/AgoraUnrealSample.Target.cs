@@ -12,8 +12,13 @@ public class AgoraUnrealSampleTarget : TargetRules
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
 		ExtraModuleNames.Add("AgoraUnrealSample");
 		// ExtraModuleNames.Add("AgoraPlugin");
-		bOverrideBuildEnvironment = true;  
-		AdditionalCompilerArguments = "-Wno-unused-but-set-variable -Wno-gcc-compat -Wno-reorder-ctor";
 
+		
+		if (Target.Platform == UnrealTargetPlatform.IOS || Target.Platform == UnrealTargetPlatform.Mac)
+		{
+		    bOverrideBuildEnvironment = true;  
+		    AdditionalCompilerArguments = "-Wno-unused-but-set-variable -Wno-gcc-compat -Wno-reorder-ctor";
+
+		}
 	}
 }
