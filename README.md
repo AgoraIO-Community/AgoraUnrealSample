@@ -16,9 +16,14 @@ Example video call project using Agora Unreal SDK
 ## Running
 
  - Clone this repo; it should support both Windows PC and Mac
- - Follow the tutorial to build the project on the main branch.
- OR
- - Switch to the AgoraBlog page to experience the fully built project
+ - Unzip the downloaded AgoraPlugin from the Agora Unreal SDK to your_project/Plugins folder
+ - Rebuild the project
+
+### main branch
+This is the UI only branch.  Build your logic using the Introduction Widget and the VideoCall Widget.
+
+### AgoraBlog branch
+This is the full project built.  A tutorial can be found at Agora's developer blogs. 
 
 ## More Resource
 
